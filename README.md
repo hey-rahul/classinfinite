@@ -1,0 +1,2 @@
+# classinfinite
+An experiment.
