@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Infinite | Available soon</title>
+
+    <link rel="icon" href="https://docs.google.com/drawings/d/e/2PACX-1vRwEBDIHr_yuUDuyY_WVza8oWRyEtHy9uRNaKeIjmLJKiGLnRSisBSKckr-IbgP3Nx85p0KJknWTNO3/pub?w=378&amp;h=378" />
+
+
+  
+    <meta property="og:image" content="https://docs.google.com/drawings/d/e/2PACX-1vRwEBDIHr_yuUDuyY_WVza8oWRyEtHy9uRNaKeIjmLJKiGLnRSisBSKckr-IbgP3Nx85p0KJknWTNO3/pub?w=378&amp;h=378" />
+
+    <meta property="og:title" content="Class Infinite" />
+    <meta name="description" content="Class Infinite" />
+
+    <meta property="og:description"
+        content="This website is going to be live soon." />
+
+    <meta property="og:url" content="https://classinfinite.com" />
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 30px;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            height: 50px;
+
+            backdrop-filter: blur(13px);
+            width: 100%;
+
+        }
+
+        .grid-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+            grid-auto-rows: minmax(200px, auto);
+            grid-auto-columns: minmax(200px, auto);
+
+            column-gap: 50px;
+            row-gap: 50px;
+
+            padding: 0px;
+
+
+
+        }
+
+        .grid-item {
+            box-shadow: 0 4px 8px rgb(0 0 0 / 14%);
+            background-color: #fff;
+            border-radius: 18.5px;
+            color: #fff;
+            padding-top: calc(100px - 16px);
+        }
+
+        .grid-item:hover {
+            background-color: #777;
+            cursor: pointer;
+        }
+
+        @media (prefers-color-scheme: light) {
+            * {
+                color-scheme: light;
+            }
+
+            body {
+                background-color: #eeeeee;
+            }
+
+            header {
+                background-color: #ffffff50;
+                box-shadow: 0 4px 8px rgb(0 0 0 / 14%);
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            * {
+                color-scheme: dark;
+            }
+
+            body {
+                background-color: #2e2e2e;
+            }
+
+            header {
+                background-color: #00000050;
+                box-shadow: 0 4px 8px rgb(0 0 0 / 14%);
+            }
+
+            img {
+                filter: invert(100%);
+            }
+
+            .grid-item {
+                background-color: #3b3b3b;
+                color: #3b3b3b;
+            }
+            .grid-item:hover {
+                
+                color: #fff;
+            }
+
+
+        }
+
+
+
+        p,
+        h1,
+        img,
+        i,
+        .grid-box {
+            margin: 12.5px 100px;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 750px) {
+
+            p,
+            h1,
+            img,
+            i,
+            .grid-box {
+                margin: 12.5px 30px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <i>We are excited to announce</i>
+
+    <header>
+
+        <img height="25px"
+            src="https://docs.google.com/drawings/d/e/2PACX-1vQ2GC0Sj-BkLd8LVZlOOzCKecLBOb2ZSlma0myPWwZEOqu2sDX6Wv3sFz8MvBzAUaAL0Gn4kOWiusgS/pub?w=520&amp;h=112" />
+
+    </header>
+
+    <h1 style="margin-top:70px">Page not found!</h1>
+
+    <p>Looks like the page you are trying to open is not available.</p>
+
+
+
+    <div class="grid-box" style="margin-top: 80px;">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+    <script>
+        var m = document.getElementsByClassName("grid-item");
+
+        let hour = new Date().getHours();
+        let minute = new Date().getMinutes();
+        am_pm = "am";
+        update_date = " today";
+
+        if (hour > 12) {
+            var hour_12 = hour - 12; am_pm = "pm";
+        }
+        else {
+            hour_12 = hour;
+        }
+
+        if (minute < 10) {
+            zero = "0";
+        }
+        else {
+            zero = "";
+        }
+
+        for (let i = 0; i <= m.length; i++) {
+            j = i + 1;
+
+            if (i % 2 == 0) {
+                m[i].innerHTML = "Hi there! ";
+            }
+
+            else {
+
+                m[i].innerHTML = "Welcome! " + "It is " + hour_12 + ":" + zero + minute +
+                    " " + am_pm;
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
